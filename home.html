@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="page">
+			<div class="page__container">
+				<div class="page__flex">
+					<a href="" class="page__logo">
+						<div class="page__logoText"></div>
+					</a>
+					<div class="page__left">
+						<a href="personCollection.html" class="page__img backBlood">
+							<div class="page__rightBorder">
+								<div class="page__txt blood">Коллекция Виктора Блуда</div>
+							</div>
+						</a>
+					</div>
+					<div class="page__right">
+						<a href="multiCollection.html" class="page__img backMulti">
+							<div class="page__leftBorder">
+								<div class="page__txt multi">Мультибрендовая коллекция</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<div id="popup__aun" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="aun__title">Мой кабинет</div>
+				<div class="aun__input-column">
+					<div class="aun__box">
+						<div href="#" class="aun__icon">
+							<img src="img/login.svg" alt="" />
+						</div>
+						<input type="text" class="aun__txt" placeholder="Email/Телефон " />
+					</div>
+					<div class="aun__box">
+						<div href="#" class="aun__icon">
+							<img src="img/password.svg" alt="" />
+						</div>
+						<input type="password" class="aun__txt" placeholder="Пароль" />
+					</div>
+				</div>
+				<div class="aun__links">
+					<a href="">Забыли пароль</a>
+					<span> / </span>
+					<a href="" data-popup="#popup__reg">Регистрация</a>
+				</div>
+				<label class="aun__check">
+					<input type="checkbox" name="remember" />
+					<span class="aun__fake"></span>
+					<span class="aun__name-check">Запомнить меня на этом компьютере</span>
+				</label>
+				<div>
+					<button class="aun__btn"><span>Войти</span></button>
+				</div>
+				<div class="aun__social-link">
+					<a href="">Войти через соцсети</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup__reg" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="aun__title">Регистрация</div>
+				<div class="aun__input-column">
+					<div class="aun__box">
+						<div href="#" class="aun__icon">
+							<img src="img/login.svg" alt="" />
+						</div>
+						<input type="text" class="aun__txt" placeholder="Email/Телефон " />
+					</div>
+					<div class="aun__box">
+						<div href="#" class="aun__icon">
+							<img src="img/password.svg" alt="" />
+						</div>
+						<input type="password" class="aun__txt" placeholder="Пароль" />
+					</div>
+					<div class="aun__box">
+						<div href="#" class="aun__icon">
+							<img src="img/password.svg" alt="" />
+						</div>
+						<input type="password" class="aun__txt" placeholder="Повторите пароль" />
+					</div>
+				</div>
+				<div>
+					<button class="aun__btn-reg"><span>Регистрация</span></button>
+				</div>
+				<div class="aun__account">
+					<button data-popup="#popup__aun">У меня уже есть аккаунт</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
