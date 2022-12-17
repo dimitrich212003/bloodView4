@@ -3556,8 +3556,8 @@
             speed: 800,
             loop: true,
             navigation: {
-                prevEl: ".swiper-button-prev",
-                nextEl: ".swiper-button-next"
+                prevEl: ".main-button-prev-blood",
+                nextEl: ".main-button-next-blood"
             },
             on: {}
         });
@@ -3571,8 +3571,8 @@
             speed: 800,
             loop: true,
             navigation: {
-                prevEl: ".swiper-button-prev",
-                nextEl: ".swiper-button-next"
+                prevEl: ".main-button-prev-multi",
+                nextEl: ".main-button-next-multi"
             },
             on: {}
         });
@@ -3811,6 +3811,15 @@
         }));
         $("body").on("click", ".multi__card-like", (function() {
             $(this).toggleClass("redLike");
+        }));
+        $("body").on("click", ".person__addToCart", (function() {
+            $(this).toggleClass("redCard");
+        }));
+        $("body").on("click", ".multi__addToCart", (function() {
+            $(this).toggleClass("redCard");
+        }));
+        $("body").on("click", ".card__addToCart", (function() {
+            $(this).toggleClass("redCard");
         }));
     }));
     $(document).ready((function() {
